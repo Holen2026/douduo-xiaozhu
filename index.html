@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -78,13 +79,28 @@
             font-size: 14px;
             color: #999;
         }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 </head>
+
 <body>
 
     <div class="title">豆豆小筑</div>
     <div class="subtitle">个人小天地 · 记录与创作</div>
-    <div class="quote">鸢影小笺，诗赠佳人</div>
+    <p style="color: #888; font-style: italic; font-size: 15px; display: flex; align-items: center; justify-content: center; gap: 10px;">
+        <span style="display: inline-block; animation: spin 8s linear infinite;">✿</span>
+        鸢影小笺，诗赠佳人
+        <span style="display: inline-block; animation: spin 8s linear infinite reverse;">✿</span>
+    </p>
 
     <ul class="menu">
         <li><a href="poems/" target="_blank">📜 情诗角 · 墨鸢专属</a></li>
@@ -93,9 +109,26 @@
     </ul>
 
     <div class="footer">
-        正在精心装修中 · 敬请期待完整版<br>
-        &copy; 2026 豆豆小筑
-    </div>
+        <p style="font-size: 15px; color: #999;">正在精心装修中·敬请期待完整版</p>Under meticulous renovation·Stay tuned for the full version <br><br>
 
+        
+        <p style="margin: 0; font-weight: 400; display: flex; align-items: center; justify-content: center; gap: 6px;">
+            <span style="font-family: 'SimSun', serif; opacity: 0.8;">🆔</span>
+            豆豆小筑专属访问地址
+        </p>
+        <p style="margin: 4px 0 0; font-family: 'Courier New', monospace; color: #888; letter-spacing: 0.5px;">
+            <a href="https://doubao.ddns.net" style="color: #888; text-decoration: none; border-bottom: 1px dotted #bbb;">
+                https://doubao.ddns.net
+            </a>
+        </p>
+        <div style="text-align: center; margin-top: 30px; padding-top: 15px; border-top: 1px solid #f0ebe6; color: #999; font-size: 14px; display: flex; align-items: center; justify-content: center; gap: 8px;">
+  豆豆小筑 &copy; 2026 - 3000
+   <svg width="20" height="20" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" style="transform: translateY(1px);">
+    <ellipse cx="24" cy="22" rx="16" ry="12" fill="#6b4f40" />
+    <ellipse cx="18" cy="18" rx="6" ry="4" fill="#f2ebe3" opacity="0.8" />
+    <path d="M24 10 L20 4 L22 2 L24 6 L26 2 L28 4 L24 10" fill="#8a6d5b" />
+  </svg>
+</div>
+</div>
 </body>
 </html>
